@@ -21,7 +21,7 @@ function Hero() {
             reliable, green-focused handyman solutions
             for all your home needs.
           </p>
-          <button onClick={() => navigate("/booking")}>Book Your Shedule</button>
+          <button className="btn-primary" onClick={() => navigate("/booking")}>Book Your Shedule</button>
         </div>
 
     
