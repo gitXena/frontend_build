@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1080" height="1080" viewBox="0 0 1080 1080" xml:space="preserve">
+<desc>Created with Fabric.js 5.2.4</desc>
+<defs>
+</defs>
+<g transform="matrix(1 0 0 1 540 540)" id="b6ef4cc5-07e4-42aa-9494-19800ad90241"  >
+</g>
+<g transform="matrix(1 0 0 1 540 540)" id="ee688639-20c5-4fce-b3ba-492667a02dcc"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1; visibility: hidden;" vector-effect="non-scaling-stroke"  x="-540" y="-540" rx="0" ry="0" width="1080" height="1080" />
+</g>
+<g transform="matrix(28.42 0 0 28.42 540 540)"  >
+<g style=""   >
+		<g transform="matrix(1 0 0 1 0 0)"  >
+<rect style="stroke: rgb(255,255,255); stroke-opacity: 0.75; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  x="-18.5" y="-18.5" rx="18.5" ry="18.5" width="37" height="37" />
+</g>
+		<g transform="matrix(1 0 0 1 0.19 0)"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(255,255,255); fill-opacity: 0.75; fill-rule: nonzero; opacity: 1;" vector-effect="non-scaling-stroke"  transform=" translate(-19.19, -19)" d="M 20.5 20.125 L 22.375 20.125 L 23.125 17.125 L 20.5 17.125 L 20.5 15.625 C 20.5 14.8525 20.5 14.125 22 14.125 L 23.125 14.125 L 23.125 11.605 C 22.8805 11.5728 21.9572 11.5 20.9822 11.5 C 18.946 11.5 17.5 12.7427 17.5 15.025 L 17.5 17.125 L 15.25 17.125 L 15.25 20.125 L 17.5 20.125 L 17.5 26.5 L 20.5 26.5 L 20.5 20.125 Z" stroke-linecap="round" />
+</g>
+</g>
+</g>
+</svg>
