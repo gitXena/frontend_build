@@ -41,12 +41,14 @@ export default function ContactForm() {
     }));
   };
 
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
   // Handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3000/addContact", {
+      const response = await fetch(`${backendUrl}/addContact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

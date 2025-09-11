@@ -40,10 +40,12 @@ export default function ServicePageTemplate(){
 
   const { id } = useParams(); // get id from URL
   
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
   useEffect(() => {
       async function fetchservices() {
       try {
-        const res = await fetch(`http://localhost:3000/services/${id}`);
+        const res = await fetch(`${backendUrl}/services/${id}`);
         const data = await res.json();
         setServices(data);
       } catch (err) {
