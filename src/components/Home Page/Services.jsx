@@ -23,7 +23,7 @@ export default function Service(){
     <ServiceCards serviceLogo="/images/Services/hammer-with-nail-puller-svgrepo-com.svg" service="Carpentry" serviceInfo="Attain's Bots work alongside your team members to" pageId="carp"/>
     <ServiceCards serviceLogo="/images/Services/house-svgrepo-com.svg" service="Electrical" serviceInfo="Attain's Bots work alongside your team members to" pageId="elect"/>
     </div>
-    <button onClick={() => navigate("/services")} id="button" >View all Services</button>
+    <button onClick={() => navigate("/service")} id="button" >View all Services</button>
     
     </section>
 
