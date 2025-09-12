@@ -20,10 +20,15 @@ section{
 
     button, input, select{
         cursor: pointer;
+      }
+
+    button{
+      transition: transform 0.2s ease, box-shadow 0.2 ease;
     }
 
     button:hover{
         filter: brightness(80%);
+        transform: scale(1.05);
     }
 
     input:hover{
