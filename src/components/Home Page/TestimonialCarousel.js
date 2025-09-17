@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const testimonials = [
   {
@@ -42,6 +42,17 @@ const TestimonialCarousel = () => {
       prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
     );
   };
+
+  // Auto slide effect
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
+      );
+    }, 3500); // change every 4 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
 
   const { name, text, image } = testimonials[currentIndex];
 
