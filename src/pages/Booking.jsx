@@ -71,7 +71,7 @@ export default function Booking() {
   return (
     <section id="bookingform">
       <form onSubmit={handleSubmit}>
-        <h2>Booking Form</h2>
+        <h2>Booking</h2>
 
         <input
           type="text"

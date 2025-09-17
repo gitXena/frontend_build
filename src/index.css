@@ -1043,6 +1043,7 @@ font-size: 24px;
     transition: transform 0.3s;
     transition: box shadow 0.3;
 }
+
 .teammembers-section img:hover{
 transform: scale(1.05);
 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -1220,6 +1221,14 @@ color: #ddd;
     margin-left: 18px;
     background-color: transparent;
 }
+
+  #contactform-section form input,
+  #contactform-section form select,
+  #contactform-section form textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+  }
 
 /*blog*/
 #blog-section {
@@ -1689,7 +1698,8 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     padding: 20px;
   }
   .profesionalsteam-section {
-    height: auto;
+    /* height: auto; */
+    height: 400vh;
     padding-top: 60px;
     width: 100vw;
   }
@@ -1798,6 +1808,10 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     gap: 10px;
     padding: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .hero-text button,
   .hero-form button {
@@ -1814,6 +1828,10 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     padding: 10px;
     font-size: 1rem;
     height: auto;
+  }
+
+  .hero-form{
+    min-width: 80%;
   }
   #aboutus01-section {
     padding-top: 30px;
@@ -1850,6 +1868,7 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     width: 100vw;
     min-width: 0;
   }
+  
   .servicecard-section,
   .review-cards,
   .pricingcard-section,
@@ -1881,13 +1900,25 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     max-width: 320px;
     margin-left: 0;
     font-size: 1rem;
+    box-sizing: border-box;
   }
+
+
   .logo-section #awards,
   .logo-section #cards {
     width: 100vw;
     max-width: 100%;
     padding-top: 20px;
   }
+
+  .logo-section #cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
   .logo-section #cards .cards-subsection {
     flex-direction: column;
     width: 100vw;
@@ -2329,26 +2360,24 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     display: none !important;
   }
 }
+
+/*booking form*/
 #bookingform {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   background: url("/public/images/bg-main.jpeg") no-repeat center center/cover;
-}
-
-#bookingform form h2 {
-  position: absolute;
-  top: 80px;
-  left: 480px;
   text-align: center;
-  font-size: 55px;
-  letter-spacing: 4px;
-  font-weight: bold;
-  color: white;
+  flex-direction: column;
 }
 
 #bookingform form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background: #fff;
   padding: 30px;
   border-radius:10px;
@@ -2356,7 +2385,21 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
   margin-top: 60px;
   height: 360px;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  height: auto;
 }
+
+#bookingform h2 {
+  text-align: center;
+  /* font-size: 55px; */
+  /* letter-spacing: 4px; */
+  font-weight: bold;
+  /* color: white;
+  margin-bottom: 0%;
+  text-align: center; */
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
 
 #bookingform form input{
   display: flex;
@@ -2364,13 +2407,18 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
   margin-bottom: 15px;
 }
 
+
+
 #bookingform form input,
 #bookingform form select {
   width: 87%;
+  box-sizing: border-box;
   padding: 10px;
   border: none;
   border-bottom: 1px solid #ccc;
   outline: none;
+  border-radius: 8px;
+  font-size: 1rem;
 }
 
 #bookingform form button{
@@ -2386,79 +2434,12 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
 }
 
 
-/*booking form
-#bookingform{
-    display: flex;
-    width: 100vw;
-    height: auto;
-    /* background-color: #f4f4f4; 
-    background-image: url("/public/images/bg-main.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: auto;
-}
 
-
-#bookingform form{
-    height: 834px;
-    width: 705px;
-    justify-content: left;
-    align-items: center;
-    margin-top: 120px;
-    margin-left: 20px;
-}
-
-#bookingform form button{
-
-    background-Color:#091054;
-    color: #FFFFFF; 
-    height: 80px;
-    width: 40%;
-    border-radius: 8px;
-    font-size: 24px;
-    font-weight: bold;
-    margin-left: 18px;
-
-}
-
-#bookingform form h2{
-    margin-left: 18px;
-    font-size: 48px;
-    color:  #FFFFFF;;
-}
-
-
-#bookingform form input{
-    height: 84px;
-    width: 70vw;
-    color: #091054;
-    padding: 14px 8px;
-    border-width: 1px;
-    border-radius: 8px;
-    margin-bottom: 18px;
-    margin-left: 18px;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
-}
-
-#bookingform form select{
-    height: 84px;
-    width: 70vw;
-    color: #091054;
-    padding: 14px 8px;
-    border-width: 1px;
-    border-radius: 8px;
-    margin-bottom: 18px;
-    margin-left: 18px;
-    background-color: transparent;
-    background-color: #FFFFFF;
-    box-sizing: border-box;
-}
-*/
 #bookingform form textarea{
     height: 66px;
-    width: 35vw;
+    /* width: 35vw; */
+    box-sizing: border-box;
+    width: 87%;
     padding: 5px 8px;
     margin-top: 20px;
     border-width: 1px;
@@ -2468,12 +2449,31 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
     background-color: transparent;
     background-color: #FFFFFF;
     box-sizing: border-box;
+    border-top:none;
+    border-left:none;
+    border-right: none;
+    font-size: 1rem;
+}
+
+
+@media (max-width: 600px) {
+#bookingform {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+#bookingform form {
+  width: 80%;
+}
 }
 
 /*payment*/
 
 #payments-page{
-background-color: #f4f4f4;
+/* background-color: #f4f4f4; */
+  background: url("/public/images/bg-main.jpeg") no-repeat center center/cover;
+
 }
 
 .payments-container {
@@ -2516,6 +2516,9 @@ background-color: #f4f4f4;
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+  border-top:none;
+  border-left:none;
+  border-right: none;
 }
 
 .payment-form input:focus {
@@ -2574,6 +2577,9 @@ background-color: #f4f4f4;
   background-repeat: no-repeat;
   cursor: pointer;
   transition: border-color 0.3s ease, background-color 0.3s ease;
+  border-top:none;
+  border-left:none;
+  border-right: none;
 }
 
 .payment-form select:focus {
