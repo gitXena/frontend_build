@@ -13,7 +13,7 @@ export default function Booking() {
     email: "",
     phone: "",
     service: "choose", // initialize with "choose"
-    info: ""
+    info: "",
   });
 
   // set default option if passed from previous page
@@ -27,7 +27,7 @@ export default function Booking() {
   const handleChange = (e) => {
     setbookingData({
       ...bookingData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -38,9 +38,9 @@ export default function Booking() {
     const formData = {
       customerName: bookingData.name,
       customerEmail: bookingData.email,
-      phone: bookingData.phone,
+      customerPhoneNumber: bookingData.phone,
       service: bookingData.service,
-      status: bookingData.info
+      additionalInformation: bookingData.info,
     };
 
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
@@ -49,9 +49,9 @@ export default function Booking() {
       const response = await fetch(`${backendUrl}/schedule/addSchedule`, {
         method: "post",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       if (!response.ok) {
@@ -67,6 +67,18 @@ export default function Booking() {
       console.error("Error:", error);
     }
   };
+
+  const [services, setServices] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:3000/service/services")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setServices(data);
+      })
+      .catch((err) => console.error("Error fetching services:", err));
+  }, []);
 
   return (
     <section id="bookingform">
@@ -107,7 +119,15 @@ export default function Booking() {
           required
         >
           <option value="choose">Services type</option>
-          <option value="option1">Furniture Assembly</option>
+          {services.map((eachService) => {
+            return (
+              <option key={eachService._id} value={eachService._id}>
+                {eachService.title}
+              </option>
+            );
+          })}
+          {/* <option value="choose">Services type</option> */}
+          {/* <option value="option1">Furniture Assembly</option>
           <option value="option2">Gutter Cleaning</option>
           <option value="option3">Home Repairs</option>
           <option value="option4">Painting</option>
@@ -119,7 +139,7 @@ export default function Booking() {
           <option value="option10">Pools</option>
           <option value="option11">Hardscaping</option>
           <option value="option12">Patios</option>
-          <option value="option13">Outdoor Kitchens</option>
+          <option value="option13">Outdoor Kitchens</option> */}
         </select>
 
         <textarea
@@ -129,9 +149,9 @@ export default function Booking() {
           onChange={handleChange}
         ></textarea>
 
-        <button 
-        onClick={() => navigate("/payment")} 
-        type="submit">Book Service</button>
+        <button onClick={() => navigate("/payment")} type="submit">
+          Book Service
+        </button>
       </form>
     </section>
   );

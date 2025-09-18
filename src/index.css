@@ -71,6 +71,8 @@ section{
   border-bottom: 1px solid #eee;
   padding: 14px 0;
   position: sticky;
+  /* position: fixed; */
+  width: 100%;
   top: 0;
   z-index: 1000;
 }
@@ -119,6 +121,12 @@ section{
 
 /* Mobile */
 @media (max-width: 768px) {
+  .navbar{
+  position: sticky;
+  /* position: fixed; */
+  /* position: absolute; */
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -152,6 +160,8 @@ section{
   padding:2.1rem 5rem;
   font-family: sans-serif;
 }
+
+
 
 .gg-container {
   max-width: 1200x;
@@ -335,9 +345,17 @@ section{
     flex-direction: column;
     align-items: flex-start;
   }
+
   .gg-news-form {
     width: 100%;
+    display: inline;
+    text-align: center;
   }
+.gg-btn {
+  width: auto;
+  margin: 1rem;
+}
+
   .gg-input {
     flex: 1;
   }
