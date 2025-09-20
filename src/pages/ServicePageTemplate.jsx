@@ -160,15 +160,15 @@ export default function ServicePageTemplate() {
         <img src={pageContent.image} alt="" />
 
         <h1>
-          {pageContent.title}
+          {content.title}
           {/* {service.title} */}
         </h1>
         <p>
-          {pageContent.description}
+          {content.description}
           {/* {service.description} */}
         </p>
         <h2>
-          Price: ${pageContent.price}
+          Price: ${content.price}
           {/* Price: ${service.price} */}
         </h2>
         <div>
