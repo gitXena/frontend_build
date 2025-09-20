@@ -33,13 +33,13 @@ export default function ServicesListings() {
           />
         );
       })}
-      {/* <ListedServices
+      <ListedServices
         service="Furniture Assembly"
         serviceInfo="We expertise in delivering MIS services with high performance and scalable enterprise solutions that will help you dominate the"
         pageId="furn"
-      /> */}
+      />
 
-      {/* <ListedServices
+      <ListedServices
         service="Gutter Cleaning"
         serviceInfo="We expertise in delivering MIS services with high performance and scalable enterprise solutions that will help you dominate the"
         pageId="gutt"
@@ -98,7 +98,7 @@ export default function ServicesListings() {
         service="Outdoor Kitchens"
         serviceInfo="We expertise in delivering MIS services with high performance and scalable enterprise solutions that will help you dominate the"
         pageId="outkit"
-      /> */}
+      />
     </section>
   );
 }
