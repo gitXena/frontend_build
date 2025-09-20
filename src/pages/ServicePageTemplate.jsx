@@ -14,7 +14,6 @@ export default function ServicePageTemplate() {
       title: "Furniture Assembly",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque volutpat nibh a hendrerit condimentum. Duis nulla diam, ultrices a viverra pharetra, egestas et magna. Sed elementum rutrum lacus, a commodo felis efficitur ut. Curabitur ornare, mauris vel convallis tempus, turpis augue consectetur sapien, euismod venenatis leo mauris ut dui. Donec vel nisi porttitor, malesuada lectus ut, ornare enim. Vestibulum facilisis interdum purus, id ornare turpis porta vitae. Ut ac interdum quam. Nulla dignissim ullamcorper elit, id ornare augue convallis sit amet. Vivamus molestie, felis placerat dignissim sagittis, massa nulla venenatis velit, quis convallis lacus lacus eget lacus. Proin eu lacus augue. Suspendisse vulputate, ipsum et pulvinar euismod, mi purus pharetra lorem, at gravida leo augue ut arcu. Sed rhoncus, sem sed vestibulum rhoncus, dui metus rutrum est, sit amet gravida ex justo eget mi.",
-      pageId:"furn"
       },
     gutt: {
       option: "option2",
@@ -156,20 +155,20 @@ export default function ServicePageTemplate() {
   return (
     <section className="servpagetemp">
       <div className="spagecontainer">
-        <img src={`${backendUrl}/image/${service.image}`} alt="" />
-        {/* {service.image} */}
+        {/* <img src={`${backendUrl}/image/${service.image}`} alt="" /> */}
+        <img src={pageContent.image} alt="" />
 
         <h1>
-          {/* {content.title} */}
-          {service.title}
+          {pageContent.title}
+          {/* {service.title} */}
         </h1>
         <p>
-          {/* {content.description} */}
-          {service.description}
+          {pageContent.description}
+          {/* {service.description} */}
         </p>
         <h2>
-          {/* Price: ${content.price} */}
-          Price: ${service.price}
+          Price: ${pageContent.price}
+          {/* Price: ${service.price} */}
         </h2>
         <div>
           <button onClick={() => handleClick(`${content.option}`)}>
