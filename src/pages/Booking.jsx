@@ -68,6 +68,8 @@ export default function Booking() {
     }
   };
 
+  const backendUrl = process.env.REACT_APP_BACKEND_URL;
+
   const [services, setServices] = useState([]);
 
   useEffect(() => {
