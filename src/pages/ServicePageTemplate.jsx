@@ -157,7 +157,7 @@ export default function ServicePageTemplate() {
     <section className="servpagetemp">
       <div className="spagecontainer">
         {/* <img src={`${backendUrl}/image/${service.image}`} alt="" /> */}
-        <img src={pageContent.image} alt="" />
+        <img src={content.image} alt="" />
 
         <h1>
           {content.title}
