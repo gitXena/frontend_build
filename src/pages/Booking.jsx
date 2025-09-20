@@ -71,7 +71,7 @@ export default function Booking() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/service/services")
+    fetch(`${backendUrl}/service/services`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
