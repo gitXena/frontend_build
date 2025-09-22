@@ -68,12 +68,10 @@ export default function Booking() {
     }
   };
 
-  const backendUrl = process.env.REACT_APP_BACKEND_URL;
-
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(`${backendUrl}/service/services`)
+    fetch("https://backend-w151.onrender.com/service/services")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -129,7 +127,7 @@ export default function Booking() {
             );
           })}
           {/* <option value="choose">Services type</option> */}
-          <option value="option1">Furniture Assembly</option>
+          {/* <option value="option1">Furniture Assembly</option>
           <option value="option2">Gutter Cleaning</option>
           <option value="option3">Home Repairs</option>
           <option value="option4">Painting</option>
@@ -141,7 +139,7 @@ export default function Booking() {
           <option value="option10">Pools</option>
           <option value="option11">Hardscaping</option>
           <option value="option12">Patios</option>
-          <option value="option13">Outdoor Kitchens</option>
+          <option value="option13">Outdoor Kitchens</option> */}
         </select>
 
         <textarea
