@@ -46,7 +46,7 @@ export default function Booking() {
     const backendUrl = process.env.REACT_APP_BACKEND_URL;
 
     try {
-      const response = await fetch(`${backendUrl}/schedules/addSchedule`, {
+      const response = await fetch(`${backendUrl}/schedule/addSchedule`, {
         method: "post",
         headers: {
           "Content-Type": "application/json",
