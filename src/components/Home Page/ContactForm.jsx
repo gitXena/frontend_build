@@ -48,8 +48,8 @@ export default function ContactForm() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`${backendUrl}/addContact`, {
-        method: "POST",
+      const response = await fetch(`${backendUrl}/contacts/addContact`, {
+        method: "post",
         headers: {
           "Content-Type": "application/json",
         },
