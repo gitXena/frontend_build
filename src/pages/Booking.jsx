@@ -71,7 +71,7 @@ export default function Booking() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://backend-w151.onrender.com/service/services")
+    fetch(`${backendUrl}/service/services`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -149,7 +149,7 @@ export default function Booking() {
           onChange={handleChange}
         ></textarea>
 
-        <button onClick={() => navigate("/payment")} type="submit">
+        <button type="submit">
           Book Service
         </button>
       </form>
