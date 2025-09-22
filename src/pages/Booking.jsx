@@ -71,7 +71,7 @@ export default function Booking() {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://backend-w151.onrender.com/service/services")
+    fetch(`${backendUrl}/service/services`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
