@@ -190,8 +190,6 @@ export default function Booking() {
     });
   };
 
-  const [message, setMessage] = useState("");
-
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent page reload
 
@@ -222,15 +220,13 @@ export default function Booking() {
       const data = await response.json();
       console.log("Success:", data);
 
-      setMessage("Form Submited!");
-      // Delay navigation to show success message briefly
-      setTimeout(() => {
-        navigate("/payment");
-      }, 2000);
+      alert("Form Submitted!");
 
+      // navigate only after success
+      navigate("/payment");
     } catch (error) {
       console.error("Error:", error);
-      setMessage("Form not submitted message");
+      alert("Form not submitted message");
     }
   };
 
@@ -318,7 +314,6 @@ export default function Booking() {
         <button type="submit">
           Book Service
         </button>
-        {message && <p>{message}</p>}
       </form>
     </section>
   );
