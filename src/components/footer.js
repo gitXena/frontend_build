@@ -26,11 +26,11 @@ const Footer = () => {
           <div className="gg-col">
             <h4 className="gg-col-title">Services</h4>
             <ul className="gg-list">
-              <li><a className="gg-link active" href="/service/outliv">Outdoor Living</a></li>
-              <li><a className="gg-link active" href="/service/pool">Pools</a></li>
-              <li><a className="gg-link active" href="/service/hards">Hardscaping</a></li>
-              <li><a className="gg-link active" href="/service/patio">Patios</a></li>
-              <li><a className="gg-link active" href="/service/outkit">Outdoor Kitchens</a></li>
+              <li><a className="gg-link">Outdoor Living</a></li>
+              <li><a className="gg-link">Pools</a></li>
+              <li><a className="gg-link">Hardscaping</a></li>
+              <li><a className="gg-link">Patios</a></li>
+              <li><a className="gg-link">Outdoor Kitchens</a></li>
             </ul>
           </div>
 
@@ -40,18 +40,18 @@ const Footer = () => {
               <li><a className="gg-link active" href="/">Home</a></li>
               <li><a className="gg-link" href="#">Projects</a></li>
               <li><a className="gg-link" href="#">Plants List</a></li>
-              <li><a className="gg-link" href="#">About Us</a></li>
-              <li><a className="gg-link" href="#">Blog</a></li>
+              <li><a className="gg-link" href="/about">About Us</a></li>
+              <li><a className="gg-link" href="/blog">Blog</a></li>
             </ul>
           </div>
 
           <div className="gg-col">
             <h4 className="gg-col-title">Resource</h4>
             <ul className="gg-list">
-              <li><a className="gg-link" href="#">Contact Us</a></li>
-              <li><a className="gg-link" href="#">Terms</a></li>
-              <li><a className="gg-link" href="#">Policy</a></li>
-              <li><a className="gg-link" href="#">Payments</a></li>
+              <li><a className="gg-link" href="/contact">Contact Us</a></li>
+              <li><a className="gg-link">Terms</a></li>
+              <li><a className="gg-link">Policy</a></li>
+              <li><a className="gg-link" href="payment">Payments</a></li>
             </ul>
           </div>
 

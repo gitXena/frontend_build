@@ -1,6 +1,8 @@
 import AboutUs02Component from "./AboutUs02Components";
+import { useNavigate } from "react-router-dom";
 
 export default function AboutUs02(){
+    const navigate = useNavigate();
 return(
 <section className="aboutus02">
     <div className="aboutus02container">
@@ -20,7 +22,7 @@ return(
     <AboutUs02Component title="Qualified team" explanation="At vero eos et accusamus et iusto odio dignissimos."/>
     </div>
     
-    <button>More About Us</button>
+    <button onClick={() => navigate("/about")}>More About Us</button>
     </div>
     
 
