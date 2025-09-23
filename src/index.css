@@ -681,6 +681,24 @@ color: white;
     border-radius: 8px;
     border-style: none;
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.servicecard-section p{
+    width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.servicecard-section p::after{
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;   /* fade size */
+  height: 100%;
+  background: linear-gradient(to right, transparent, white);
 }
 
 .servicecard-section img{
