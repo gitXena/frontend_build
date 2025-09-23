@@ -6,12 +6,11 @@ import Home from './pages/Home';
 import BackToTop from "./components/BacktoTop";
 import Footer from "./components/footer";
 import ContactForm from "./components/Home Page/ContactForm";
-import AboutUs01 from "./components/Home Page/AboutUs01";
-import Portfolio from "./components/Home Page/Portfolio";
 import BlogSection from "./components/Home Page/BlogSection";
 import Booking from "./pages/Booking";
 import PaymentsPage from "./pages/Payments";
 import Gallery from "./pages/Gallery";
+import AboutUs from "./pages/AboutPage";
 
 function App() {
   return (
@@ -23,8 +22,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/service" element={< ServiceListings/>} />
         <Route path="/service/:pageId" element={<ServicePageTemplate/>} />
-        {/* <Route path="/service/:id" element={<ServicePageTemplate/>} /> */}
-        <Route path="/about" element={<AboutUs01/>}/>
+        <Route path="/about" element={<AboutUs/>}/>
         <Route path="/gallery" element={<Gallery/>}/>
         <Route path="/blog" element={<BlogSection/>}/>
         <Route path="/contact" element={<ContactForm/>}/>

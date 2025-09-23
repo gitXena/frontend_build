@@ -2750,3 +2750,167 @@ section, .hero, #aboutus01-section, .aboutus02, #services-section, #portfolio, .
 .navbar-nav { display:flex; gap:1rem; align-items:center; }
 .nav-link { background:none; border:none; cursor:pointer; color:inherit; font-size:1rem; padding:0.25rem 0.5rem; }
 .nav-link.active { color:#2563eb; font-weight:600; }
+
+
+
+
+/*about page*/
+/* AboutUs.css */
+.about-us {
+  background-color: #F4F4F4;
+  padding: 4rem 1rem;
+  color: #091054;
+}
+
+.about-us-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.about-us-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #091054;
+  margin: 0;
+  border-bottom: 3px solid #FAE084;
+  padding-bottom: 0.5rem;
+  max-width: fit-content;
+}
+
+.about-us-description,
+.about-us-mission {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #091054;
+  margin: 0;
+}
+
+.about-us-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.feature-item {
+  background-color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(9, 16, 84, 0.1);
+  border-left: 4px solid #FAE084;
+}
+
+.feature-item h3 {
+  color: #091054;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.feature-item p {
+  color: #091054;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.about-us-image-placeholder {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(9, 16, 84, 0.1);
+}
+
+.image-placeholder-content {
+  text-align: center;
+  color: #091054;
+  font-size: 1rem;
+  background-color: #FAE084;
+  padding: 2rem;
+  border-radius: 4px;
+}
+
+.about-us img{
+  border-radius: 8px;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.image-placeholder-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Adaptability */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 2rem 1rem;
+  }
+
+
+  .about-us-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-us-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-us-description,
+  .about-us-mission {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .about-us-features {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .feature-item {
+    padding: 1rem;
+  }
+
+  .about-us-image-placeholder {
+    height: 250px;
+    order: -1; /* Place image above content on mobile */
+  }
+  
+
+  .image-placeholder-content {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-title {
+    font-size: 1.8rem;
+  }
+
+  .about-us-description,
+  .about-us-mission {
+    font-size: 0.95rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1.1rem;
+  }
+}
