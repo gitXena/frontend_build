@@ -36,7 +36,7 @@ const AboutUs = () => {
           {/* Placeholder for an image; replace with actual <img> tag */}
           <div className="image-placeholder-content">
           <img src="/images/istockphoto-1346125184-612x612.jpg"></img>
-            <span>Our team</span>
+            <span></span>
           </div>
         </div>
       </div>
